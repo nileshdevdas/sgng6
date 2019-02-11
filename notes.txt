@@ -1,0 +1,354 @@
+npm installs in two locations 
+
+npm install 
+npm i  xxxx  (is a local install )
+
+npm install -g 
+
+C:\Users\%User%\AppData\Roaming\npm
+
+npm believes on a file package.json 
+all the dependencies for a project are added in package.json 
+
+
+You will never checking npm_modules in tyou source control system 
+you will only check in package.json and your code 
+
+when you check out  
+
+npm install 
+
+
+tsc  p-> Type script compiler 
+tsc <- input.ts 
+tsc =>  output.js 
+
+How to run a code writtent in ts 
+
+node --> .js file 
+
+number, string , 
+
+A ts file can have direct scripting or direct classes 
+write a script its a function and function calls 
+
+Write class then then the class can have 
+	a) constructors 
+	b) methods 
+	c) variables 
+
+Write Parameters types and  for method return types  
+Write also abstract class , interfaces 
+write inheritence 
+
+
+create a new folder : 
+		// create a project 
+		npm init -y 
+
+		// install the tyspcript compiler
+		npm i  -g  typescript 
+
+		// check the compiler version 
+		tsc -v 
+
+		// open visual studio 
+		code . 
+
+		// index.ts 
+		//imports   
+		import  {class}  from './file'
+
+		export class ClassName extends AnotherClass implements AInterface {	
+			construtor(private a:string, b:string){
+
+			}
+
+
+			validateData(){
+				this.xxx ; 
+
+			}
+
+
+		}
+
+		interface IDemo {
+
+		}
+
+		abstract class Test {
+
+
+		}
+
+new ClassName(); 
+
+tsc  filename.ts 
+
+node  filename.js 
+
+
+======================================================================
+
+class MyComponent implements //// {
+	constructor(){}
+}
+
+
+
+1. Visual Studio code 
+2. Node v8.11.3
+3. npm 6.7.0
+4. npm i -g typescript 
+5. tsc -v 
+-----------------------------------------------------
+using angular :- 
+
+angular-cli : 
+
+How do i install a angular cli: 
+
+npm i -g @angular/cli@6.0.8 
+
+----------------------------------------------------------- 
+ you will get the ng comand 
+
+ng new --> this would create a new project 
+ng generate -> would generate  components, services, directives, modules 
+
+How to create a new angular project :- 
+
+ng  new  <projectName> 
+
+
+
+
+
+Step 1 :  
+npm in -g @angular/cli@6.0.8 
+
+ng new <yourproject> 
+
+cd <yourproject> 
+
+ng -v 
+
+
+|------ app.module.ts 
+		        |----app.component.ts
+		        		  selector
+		        		  template (app.component.html)
+		        		  styles
+		        		 |----- your componentent 
+		        		 			|--- subcomponent 
+		        		 						|---- sub sub component  	
+|---- index.html
+		  |----- <app-component></app-component>
+
+
+angular.json -> 
+	if you have script 
+	if you have css 
+	if you assets  
+
+test 
+build 
+serve 
+e2e
+lint 
+
+ng config --->   angular.json 
+
+package.json 
+angular.json 
+index.html 
+app.module.ts 
+app.component.ts 
+  |---app.style.css 
+  |----app.component.html 
+
+
+
+
+
+How to create a cmponent 
+
+ng generate component hello 
+	|---- hello.component.ts 
+
+		    @Component({
+		    	selector : 'app-hello', 
+		    	templateUrl :  'app.component.html' 
+		    	styles  	: ['app.component.css'] 
+
+		    })
+		    export class HelloComponent {
+
+		    } 
+
+		  hello.component.spec.ts 
+		  hello.component.html 
+		  hello.component.css 
+
+index.html 
+	|-----<app-root></app-root>
+				 |--- app.component.ts 
+				 			|----app.component.html 
+										|- <app-hello></app-hello>
+
+
+ng  g  c   // to create a component 
+A 
+
+export class COmponentName implement OnInit {
+	decl// vas 
+	constructor(){
+
+	}
+
+	ngInit(){
+		/// component is rendered 
+	}
+
+	handleEvent(evt){
+
+	}
+
+
+
+
+} 
+
+{{}} // to bind the values  // value binding 
+ 
+(click)=action /// event binding 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
